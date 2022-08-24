@@ -19,4 +19,5 @@ from django.urls import include, path
 urlpatterns = [
     path("", include("cookbook.urls")),
     path('admin/', admin.site.urls),
+    path('cookbook/', include('cookbook.urls'))
 ]
