@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
+    'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
@@ -41,6 +42,7 @@ INSTALLED_APPS = [
     #local apps
     'recipes',
     'users',
+    
 
     #3rd party
     'crispy_forms',
@@ -135,3 +137,4 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = 'recipes-home'
 LOGIN_URL = 'user-login'
+LOGOUT_URL = 'user-logout'
